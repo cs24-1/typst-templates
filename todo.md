@@ -1,0 +1,2 @@
+- research standards for template structure and usage
+- add gitingores for those that want to simply clone and write in this directory
