@@ -13,9 +13,33 @@
   place: "Musterhausen",
   doc,
 ) = {
-  set text(lang: "de")
+  set page(
+    paper: "a4",
+    margin: (
+      left: 40mm,
+      top: 20mm,
+      right: 20mm,
+      bottom: 20mm,
+    ),
+  )
+  set text(
+    lang: "de",
+    size: 12pt,
+  )
+  set par()
+  show footnote.entry: {
+    set text(size: 10pt)
+    set par(leading: 1em)
+  }
+  set heading(
+    numbering: "1.1",
+  )
+  set outline(
+    depth: 3,
+  )
 
 
+  set page(numbering: none)
   set align(center)
   text(17pt, institution-override)
   // parbreak()
