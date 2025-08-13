@@ -1,19 +1,17 @@
 # typst-templates
 
-## using projektarbeit.typ
+Here, we want to share some templates that can help students at [DHSN](https://www.dhsn.de/) write papers more easily.
 
-in `main.typ`:
 
-```typst
-#import "projektarbeit.typ": conf
+Check out the individual folders for more information on how to use the template.
 
-#show: conf.with(
-  title: "meine Projektarbeit",
-  author: (
-    name: "Max muster",
-    id: "12345678",
-    address: "Musterstr. 123, 0123 Dresden",
-    seminar-group: "CS20-2",
-  ),
-)
-```
+
+## disclaimer
+
+You are still responsible for following the guidelines. These templates may not guarantee full compliance.
+
+
+## links
+
+- [Typst](https://typst.app/)
+- [Tinymist](https://github.com/Myriad-Dreamin/tinymist) is a nice helper tool that also includes a VSCode extension

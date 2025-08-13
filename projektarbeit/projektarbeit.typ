@@ -1,4 +1,5 @@
-#let conf(
+// contains root configuration as well as the cover page
+#let frontmatter(
   institution-override: "Duale Hochschule Sachsen",
   title: "NO TITLE SET",
   author: (
@@ -33,9 +34,6 @@
   }
   set heading(
     numbering: "1.1",
-  )
-  set outline(
-    depth: 3,
   )
 
 
@@ -76,3 +74,23 @@
 
   doc
 }
+
+#let my-outline(doc) = {
+  set page(numbering: "I")
+  set outline(
+    depth: 3,
+  )
+  outline()
+  doc
+}
+
+#let main(doc) = {
+  set page(numbering: "1")
+  doc
+}
+
+#let appendix(doc) = {
+  set page(numbering: "I")
+  doc
+}
+
