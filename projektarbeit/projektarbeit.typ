@@ -28,9 +28,10 @@
     size: 12pt,
   )
   set par()
-  show footnote.entry: {
+  show footnote.entry: it => {
     set text(size: 10pt)
     set par(leading: 1em)
+    it
   }
   set heading(
     numbering: "1.1",
