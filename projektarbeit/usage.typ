@@ -55,6 +55,8 @@ an almost empty page
   counter(page).update(mycounter.get().first() + 1)
 }
 
+#bibliography("path/to/bibliography.bib")
+
 = my final message <section-in-the-end>
 
 goodbye
