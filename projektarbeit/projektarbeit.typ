@@ -27,10 +27,10 @@
     lang: "de",
     size: 12pt,
   )
-  set par()
+  set par(leading: 0.75em, justify: true)
+  set bibliography(style: "iso-690-author-date", title: "Literaturverzeichnis")
   show footnote.entry: it => {
     set text(size: 10pt)
-    set par(leading: 1em)
     it
   }
   set heading(
