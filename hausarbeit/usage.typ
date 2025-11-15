@@ -1,4 +1,5 @@
-#import "projektarbeit.typ": appendix, frontmatter, main, my-outline
+#import "hausarbeit.typ": appendix_numbering, frontmatter, main_numbering, my-outline
+#import "../common.typ": authorship
 
 #let mycounter = counter("mycounter")
 
@@ -21,7 +22,7 @@
 #context {
   mycounter.update(counter(page).get())
 }
-#show: main
+#show: main_numbering
 #counter(page).update(1)
 
 = Welcome
@@ -50,7 +51,7 @@ Because we want the roman numerals to continue at the #link(<section-in-the-end>
 an almost empty page
 
 
-#show: appendix
+#show: appendix_numbering
 #context {
   counter(page).update(mycounter.get().first() + 1)
 }
@@ -60,3 +61,7 @@ an almost empty page
 = my final message <section-in-the-end>
 
 goodbye
+
+#pagebreak()
+
+#authorship(author: "Max Muster", place: "Musterhausen")
