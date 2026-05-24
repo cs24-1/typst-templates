@@ -1,17 +1,31 @@
 # typst-templates
 
-Here, we want to share some templates that can help students at [DHSN](https://www.dhsn.de/) write papers more easily.
+Template(s) to help students at [DHSN](https://www.dhsn.de/) write papers more easily.
 
+## Disclaimer
 
-Check out the individual folders for more information on how to use the template.
+This template is **not official**. You are still responsible for following the guidelines.
 
+## Using a template
 
-## disclaimer
+Currently, none of this is submitted to the Typst universe, which is why you'll have to clone this repo.
 
-You are still responsible for following the guidelines. These templates may not guarantee full compliance.
+<br>
 
+1. Copy template to local package registry (run `typst info` if the path below does not work):
+```bash
+mkdir -p ~/.local/share/typst/packages/local/wissenschaftliche-arbeit/0.1.0
 
-## links
+rsync -a /path/to/typst-templates/wissenschaftliche-arbeit/ \
+  ~/.local/share/typst/packages/local/wissenschaftliche-arbeit/0.1.0/
+```
+
+2. Initialize your project using the local registry:
+```bash
+typst init @local/wissenschaftliche-arbeit:0.1.0 /your/project
+```
+
+## Links
 
 - [Typst](https://typst.app/)
-- [Tinymist](https://github.com/Myriad-Dreamin/tinymist) is a nice helper tool that also includes a VSCode extension
+- [Tinymist](https://github.com/Myriad-Dreamin/tinymist) is a helper tool that includes a VS Code extension

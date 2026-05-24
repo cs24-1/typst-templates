@@ -1,0 +1,14 @@
+[package]
+name = "wissenschaftliche-arbeit"
+version = "0.1.0"
+compiler = "0.6.0"
+entrypoint = "lib.typ"
+authors = ["cs24-1"]
+license = "MIT"
+description = "DHSN template for Hausarbeit and Projektarbeit"
+keywords = ["wissenschaftliche", "hausarbeit", "projektarbeit", "dhsn", "academic", "german"]
+categories = ["academic"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
