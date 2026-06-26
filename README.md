@@ -16,7 +16,7 @@ Currently, none of this is submitted to the Typst universe, which is why you'll 
 ```bash
 mkdir -p ~/.local/share/typst/packages/local/wissenschaftliche-arbeit/0.1.0
 
-rsync -a /path/to/typst-templates/wissenschaftliche-arbeit/ \
+rsync -a /path/to/typst-templates/wissenschaftliche-arbeit/* \
   ~/.local/share/typst/packages/local/wissenschaftliche-arbeit/0.1.0/
 ```
 
