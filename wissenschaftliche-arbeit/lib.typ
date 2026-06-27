@@ -2,6 +2,7 @@
   author: "NO AUTHOR SET",
   place: "NO PLACE SET",
 ) = {
+  pagebreak()
   set heading(numbering: none)
   text[= Selbstständigkeitserklärung
 
@@ -92,16 +93,11 @@
   set align(top)
   pagebreak()
 
-  let roman-pages = counter("wissenschaftliche-arbeit-roman-pages")
-  roman-pages.update(0)
-
   if include-outline {
     set page(numbering: "I")
+    counter(page).update(1)
     set outline(depth: outline-depth)
     outline()
-    context {
-      roman-pages.update(counter(page).get())
-    }
   }
 
   set page(numbering: "1")
@@ -110,10 +106,7 @@
 
   if appendix != none {
     pagebreak()
-    set page(numbering: "I")
-    context {
-      counter(page).update(roman-pages.get().first() + 1)
-    }
     appendix
   }
+
 }

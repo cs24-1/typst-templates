@@ -11,13 +11,18 @@
   ),
   field: "MeinStudiengang",
   module-abbrev: "ABC2",
-  place: "Bochum",
+  place: "Leipzig",
   appendix: [
     = Anhang
+
+    == sumthin else
+    yeayeay
+    #lorem(543)
+
     #authorship(author: "Max Muster", place: "Musterhausen")
   ],
 )
 
 = Welcome
 
-#lorem(120)
+#lorem(1200)
